@@ -1,0 +1,17 @@
+@import '../abstract/mixins';
+
+.big-card {
+  height: 75vh;
+  width: 70vw;
+  @include respond(tab-land) {
+    width: 80vw;
+  }
+  @include respond(tab-port) {
+    width: 80vw;
+  }
+  @include respond(phone) {
+    width: 80vw;
+  }
+  background-color: white;
+  border-radius: 4px;
+}

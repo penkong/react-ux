@@ -18,7 +18,7 @@ class UserInfo extends Component {
             size="2x" 
             style={{ color: 'rgb(146, 234, 252)'}}
             />
-            <input type="text" name="phone" placeholder="First Name"/>
+            <input type="text" name="firstName" placeholder="First Name"/>
           </div>
           <div className="form-group">
             <FontAwesomeIcon 
@@ -27,7 +27,7 @@ class UserInfo extends Component {
             size="2x" 
             style={{ color: 'rgb(146, 234, 252)'}}
             />
-            <input type="text" name="puke" placeholder="Last Name"/>
+            <input type="text" name="lastName" placeholder="Last Name"/>
           </div>
           <div className="form-group">
             <FontAwesomeIcon 
@@ -36,7 +36,7 @@ class UserInfo extends Component {
             size="2x" 
             style={{ color: 'rgb(146, 234, 252)'}}
             />
-            <input type="text" name="puke" placeholder="National Code"/>
+            <input type="text" name="nationalCode" placeholder="National Code"/>
           </div>
           <div className="form-group">
             <FontAwesomeIcon 
@@ -45,7 +45,7 @@ class UserInfo extends Component {
             size="2x" 
             style={{ color: 'rgb(146, 234, 252)'}}
             />
-            <textarea type="text" name="puke" placeholder="Your Address"/>
+            <textarea type="text" name="address" placeholder="Your Address"/>
           </div>
           <div className="submit">
             <input type="submit" value="Submit"/>

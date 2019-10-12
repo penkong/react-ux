@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+//
+import '../../sass/component/BigCard.scss';
+import React from 'react'
 
-class BigCard extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
+const BigCard = ({ children }) => {
+  return (
+    <div className="big-card">
+      {children}
+    </div>
+  )
 }
 
-export default BigCard;
+export default BigCard
