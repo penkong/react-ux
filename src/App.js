@@ -1,10 +1,10 @@
 //
-import React, { lazy, Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
 import "./sass/App.scss";
+import React, { lazy, Suspense } from "react";
+import { Switch, Route, Router } from "react-router-dom";
 
 
-
+import history from './utils/history';
 
 
 import Header from "./layouts/Header/Header";
@@ -18,24 +18,26 @@ const UserInfoPage = lazy(() => import('./pages/UserInfoPage/UserInfoPage'));
 const ConfirmPage = lazy(() => import('./pages/ConfirmPage/ConfirmPage'));
 
 
-const App = (props) => {
+const App = () => {    
   const loadHeader = () => 
-    (this.props.history.location.pathname === '/')
-    ? null
-    : <Header/>
+    (window.location.pathname === '/')
+      ? null 
+      : <Header/>
   return (
     <div>
-      {loadHeader}
-      <Switch>
-        <ErrorBoundary>
-          {/* suspense for async loading comp with lazy */}
-          <Suspense fallback={Spinner}>
-            <Route exact path="/" render={()=>(<LandingPage/>)} />
-            <Route exact path="/user-info" component={UserInfoPage} />
-            <Route exact path="/confirm" component={ConfirmPage} />
-          </Suspense>
-        </ErrorBoundary>
-      </Switch>
+    <Router history={history}>
+        {loadHeader()}
+        <Switch>
+          <ErrorBoundary>
+            {/* suspense for async loading comp with lazy */}
+            <Suspense fallback={Spinner}>
+              <Route exact path="/" render={()=>(<LandingPage/>)} />
+              <Route exact path="/user-info" component={UserInfoPage} />
+              <Route exact path="/confirm" component={ConfirmPage} />
+            </Suspense>
+          </ErrorBoundary>
+        </Switch>
+    </Router>
     </div>
   );
 }
