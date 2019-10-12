@@ -1,3 +1,62 @@
 .login-landing {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  .img-container {
+    img {
+      max-width: 15rem;
+      height: auto;  
+    }
+    margin: 5rem auto;
+  }
+  form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-group {
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 3.3rem;
+        left: 1.3rem;
+      }
+      input {
+        outline: none;
+        padding: 2rem 2.3rem 2rem 4.6rem;
+        width: 30vw;
+        border-radius: 6px;
+        font-size: 1.4rem;
+        border: 1px solid rgb(226, 226, 226);
+        margin: 2rem auto;
+        &::placeholder {
+          color: rgb(182, 182, 182);
+          opacity: 1; /* Firefox */
+        }
+      }
+    }
+    .submit {
+      input {
+        margin-top: 6rem;
+        height: 5rem;
+        width: 30vw;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        border: none;
+        border-radius: 6px;
+        background-color: rgb(146, 234, 252);
+        background-color: #00C9F3;
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: rgb(2, 186, 223);
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
 }
