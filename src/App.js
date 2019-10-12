@@ -18,10 +18,14 @@ const UserInfoPage = lazy(() => import('./pages/UserInfoPage/UserInfoPage'));
 const ConfirmPage = lazy(() => import('./pages/ConfirmPage/ConfirmPage'));
 
 
-const App = () => {
+const App = (props) => {
+  const loadHeader = () => 
+    (this.props.history.location.pathname === '/')
+    ? null
+    : <Header/>
   return (
     <div>
-      <Header/>
+      {loadHeader}
       <Switch>
         <ErrorBoundary>
           {/* suspense for async loading comp with lazy */}

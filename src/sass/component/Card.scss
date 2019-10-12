@@ -1,6 +1,17 @@
+@import '../abstract/mixins';
+
 .card {
   height: 75vh;
   width: 40vw;
+  @include respond(tab-land) {
+    width: 50vw;
+  }
+  @include respond(tab-port) {
+    width: 60vw;
+  }
+  @include respond(phone) {
+    width: 80vw;
+  }
   background-color: white;
-  border-radius: 9px;
+  border-radius: 4px;
 }

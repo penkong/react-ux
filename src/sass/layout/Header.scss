@@ -9,28 +9,36 @@
   margin: 0 auto;
   .logo {
     cursor: pointer;
+    transition: all 0.4s ease;
     img {
       height: 4.5rem;
-      margin-top: 1.5rem;
+      margin-top: 1.75rem;
       width: auto;
+    }
+    &:hover {
+      transform: scale(1.02);
     }
   }
   .logout {
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
     cursor: pointer;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    background-color: rgb(46, 46, 0);
     background-color: rgb(224, 224, 0);
     position: relative;
     transition: all 0.4s ease;
     &:hover {
-      transform: translate(1.20);
+      background-color: rgb(235, 248, 162);
+      transform: scale(1.05)
+   
     }
     svg {
       @include absCenter;
-      
+      transition: all 0.4s ease;
+      &:hover {
+        color: white;
+      }
     }
   }
   
