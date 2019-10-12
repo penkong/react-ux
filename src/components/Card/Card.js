@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+//
+import '../../sass/component/Card.scss';
+import React from 'react'
 
-class Card extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
+const Card = ({ children }) => {
+  return (
+    <div className="card">
+      {children}
+    </div>
+  )
 }
 
-export default Card;
+export default Card

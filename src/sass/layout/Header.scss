@@ -1,3 +1,4 @@
+@import '../../sass/abstract/mixins';
 .header {
   width: 96vw;
   height: 4.5rem;
@@ -17,8 +18,20 @@
   .logout {
     margin-top: 1.5rem;
     cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(46, 46, 0);
+    background-color: rgb(224, 224, 0);
+    position: relative;
+    transition: all 0.4s ease;
+    &:hover {
+      transform: translate(1.20);
+    }
+    svg {
+      @include absCenter;
+      
+    }
   }
-  .logo .logout {
-    margin-top: 2rem;
-  }
+  
 }
