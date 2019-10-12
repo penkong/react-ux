@@ -16,8 +16,9 @@ class Header extends Component {
           <FontAwesomeIcon 
             icon={faPowerOff} 
             size="4x" 
-            style={{ color: 'rgb(65, 65, 0)'}}
+            style={{ color: 'white'}}
           />
+          {/* rgb(221, 144, 0) */}
         </div>
       </div>
     );

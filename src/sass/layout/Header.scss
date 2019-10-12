@@ -25,12 +25,12 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: rgb(224, 224, 0);
+    background-color: #006893;
     position: relative;
     transition: all 0.4s ease;
     &:hover {
-      background-color: rgb(235, 248, 162);
-      transform: scale(1.05)
+      background-color: #003f5a;
+      transform: scale(1.1)
    
     }
     svg {
