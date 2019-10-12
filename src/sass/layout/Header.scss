@@ -1,0 +1,24 @@
+.header {
+  width: 96vw;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  .logo {
+    cursor: pointer;
+    img {
+      height: 4.5rem;
+      margin-top: 1.5rem;
+      width: auto;
+    }
+  }
+  .logout {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  .logo .logout {
+    margin-top: 2rem;
+  }
+}
