@@ -33,7 +33,7 @@ const App = () => {
         <Switch>
           <ErrorBoundary>
             {/* suspense for async loading comp with lazy */}
-            <Suspense fallback={Spinner}>
+            <Suspense fallback={(<Spinner/>)}>
               <Route exact path="/" render={()=>(<LandingPage/>)} />
               <Route exact path="/loading" component={LoadingBlue} />
               <Route exact path="/user" component={UserInfoPage} />

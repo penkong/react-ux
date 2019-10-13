@@ -11,6 +11,7 @@ class LandingPage extends Component {
         <Card>
           <Login/>
         </Card>
+        <p>Copyright &copy;  - All right reserved</p>
       </div>
     );
   }

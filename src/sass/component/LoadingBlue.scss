@@ -1,0 +1,48 @@
+@import '../abstract/mixins';
+.temporary {
+  min-height: calc(100vh - 5.5rem);
+  max-width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  .loading {
+  text-align: center;
+  @include absCenter;
+  margin-top: 7rem;
+  font-size: 3rem;
+  color: rgb(172, 172, 172);
+
+  }
+  .load-wrap {
+    width: 100%;
+    height: 100px;
+    margin: 0 2rem 2rem 0;
+    padding: 2rem 2rem 2rem;
+    text-align: center;
+  
+    .line {
+        display: inline-block;
+        width: 2.7rem;
+        height: 8rem;
+        margin-right: 1rem;
+        margin-top: 20rem;
+        border-radius: 0.7rem;
+        background-color: rgb(95, 228, 255);
+    }
+  }
+}
+
+.load .line:nth-last-child(1) {animation: eachLoading 1.4s .1s linear infinite;}
+.load .line:nth-last-child(2) {animation: eachLoading 1.4s .3s linear infinite;}
+.load .line:nth-last-child(3) {animation: eachLoading 1.4s .5s linear infinite;}
+.load .line:nth-last-child(4) {animation: eachLoading 1.4s .7s linear infinite;}
+
+@keyframes eachLoading {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(0,2rem);}
+    100% {transform: translate(0,0);}
+}
+
+
