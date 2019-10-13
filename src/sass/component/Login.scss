@@ -8,10 +8,10 @@
   min-height: 100%;
   .img-container {
     img {
-      max-width: 15rem;
+      max-width: 20rem;
       height: auto;  
     }
-    margin: 5rem auto;
+    margin: 5rem auto 3rem;
   }
   form {
     margin-top: 2rem;
@@ -58,6 +58,10 @@
         &:hover {
           background-color: rgb(2, 186, 223);
           transform: scale(1.02);
+        }
+        &:active {
+          background-color: rgb(1, 204, 245);
+          transform: scale(0.98);
         }
       }
     }

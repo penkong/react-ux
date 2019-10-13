@@ -1,0 +1,49 @@
+.style-404 {
+  width: 100%;
+  height: 30vw;
+  .eyes {
+    width: 10vw;
+    margin: 0 auto;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: #EB6F6F;
+    }
+  }
+  .mouth {
+    height: 2.5rem;
+    width: 10vw;
+    background-color: #EB6F6F;
+    margin: 0 auto;
+    margin-top: 6rem;
+  }
+  .text-404 {
+    color: #EB6F6F;
+    min-width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: inherit;
+    margin: 4rem auto;
+    :first-child {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+    :nth-child(2) {
+      font-size: 4rem;
+    }
+    a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #22DE87;
+      transition: all 0.4s ease-in;
+      :hover {
+        color: rgb(1, 65, 35);
+      }
+    }
+  }
+}

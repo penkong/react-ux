@@ -10,7 +10,7 @@ import history from './utils/history';
 import Header from "./layouts/Header/Header";
 import Spinner from "./components/Spinner/Spinner";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
-// import Page404 from "./pages/Page404/Page404";
+import Page404 from "./pages/Page404/Page404";
 
 
 // make lazy loading 
@@ -35,9 +35,9 @@ const App = () => {
               <Route exact path="/" render={()=>(<LandingPage/>)} />
               <Route exact path="/user" component={UserInfoPage} />
               <Route exact path="/confirm" component={ConfirmPage} />
+              <Route exact path="/page404" component={Page404} />
             </Suspense>
           </ErrorBoundary>
-              {/* <Route exact component={Page404} /> */}
         </Switch>
     </Router>
     </div>

@@ -15,7 +15,7 @@ class Header extends Component {
         <div className="logout">
           <FontAwesomeIcon 
             icon={faPowerOff} 
-            size="4x" 
+            size="3x" 
             style={{ color: 'white'}}
           />
           {/* rgb(221, 144, 0) */}
