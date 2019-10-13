@@ -10,6 +10,7 @@ import history from './utils/history';
 import Header from "./layouts/Header/Header";
 import Spinner from "./components/Spinner/Spinner";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
+// import Page404 from "./pages/Page404/Page404";
 
 
 // make lazy loading 
@@ -32,10 +33,11 @@ const App = () => {
             {/* suspense for async loading comp with lazy */}
             <Suspense fallback={Spinner}>
               <Route exact path="/" render={()=>(<LandingPage/>)} />
-              <Route exact path="/user-info" component={UserInfoPage} />
+              <Route exact path="/user" component={UserInfoPage} />
               <Route exact path="/confirm" component={ConfirmPage} />
             </Suspense>
           </ErrorBoundary>
+              {/* <Route exact component={Page404} /> */}
         </Switch>
     </Router>
     </div>

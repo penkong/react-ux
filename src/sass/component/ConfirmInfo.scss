@@ -1,3 +1,122 @@
+@import '../abstract/mixins';
 .confirm-info {
-  
+  hr {
+    border: 0.7px solid rgba(221, 221, 221, 0.856);
+  }
+  .main-title {
+    margin: 4rem 0rem 0.4rem 6rem;
+    font-size: 3rem;
+    @include respond(tab-land) {
+      font-size: 2.7rem;
+    }
+    @include respond(tab-port) {
+      margin: 4rem 0rem 0.4rem 6rem;
+      font-size: 2.4rem;
+    }
+    @include respond(phone) {
+      margin: 4rem 0rem 0.4rem 3rem;
+      font-size: 2rem;
+    }
+    strong {
+      color: #22DE87;
+    }
+  }
+  .sub-title {
+    font-size: 1.5rem;
+    color: rgb(168, 168, 168);
+    margin: 0rem 0rem 0.5rem 6.1rem;
+    @include respond(tab-land) {
+      margin: 0rem 0rem 0.5rem 6.1rem;
+    }
+    @include respond(tab-land) {
+      margin: 0rem 0rem 0.5rem 6.1rem;
+    }
+    @include respond(phone) {
+      margin: 0rem 0rem 0.5rem 3rem;
+    }
+  }
+  .review-form {
+    text-align: center;
+    margin: 7rem auto 4rem;
+    width: 40vw;
+    @include respond(tab-land) {
+      width: 50vw;
+      margin-bottom: 7rem;
+    }
+    @include respond(tab-port) {
+      margin-bottom: 9rem;
+    }
+    @include respond(phone) {
+      width: 75vw;
+      margin-bottom: 10rem;
+    }
+    .row-info {
+      margin: 2rem;
+      font-size: 2rem;
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .button-row {
+    width: 57vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    @include respond(phone) {
+      padding: 0.75rem;
+      width: 65vw;
+    }
+    button {
+      padding: 1rem 2rem; 
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      height: 5rem;
+      width: 22rem;
+      font-size: 2rem;
+      color: white;
+      font-family: inherit;
+      transition: all 0.4s ease;
+      outline: none;
+      @include respond(tab-port) {
+        width: 16rem;
+      }
+      @include respond(phone) {
+        width: 12rem;
+      }
+      &:hover {
+        transform: scale(1.02);
+      }
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+    .back {
+      // margin-left: 2rem;
+      background-color: #AD3434;
+      &:hover {
+        background-color: rgb(148, 34, 34);
+      }
+      &:active {
+        background-color: rgb(180, 73, 73);
+      }
+    }
+    .confirm {
+      // margin-right: 0.3rem;
+      background-color: #22DE87;
+      &:hover {
+        background-color: rgb(12, 236, 132);
+      }
+      &:active {
+        background-color: rgb(29, 250, 147);
+      }
+    }
+  }
 }

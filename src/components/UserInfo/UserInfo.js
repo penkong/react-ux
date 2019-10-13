@@ -9,7 +9,7 @@ class UserInfo extends Component {
   render() {
     return (
       <div className="user-info">
-        <p><strong> Please fill </strong> form below with <br/> requested <strong> info </strong> : </p>
+        <p><strong> Please fill </strong>in the form below with <br/> requested <strong> info </strong> : </p>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <FontAwesomeIcon 
@@ -48,7 +48,7 @@ class UserInfo extends Component {
             <textarea type="text" name="address" placeholder="Your Address"/>
           </div>
           <div className="submit">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Next"/>
           </div>
         </form>
       </div>
