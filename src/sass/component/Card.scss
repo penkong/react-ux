@@ -1,6 +1,9 @@
 @import '../abstract/mixins';
 
 .card {
+  -webkit-box-shadow: 0px 7px 7px 3px rgba(122,121,122,0.46);
+  -moz-box-shadow: 0px 7px 7px 3px rgba(122,121,122,0.46);
+  box-shadow: 0px 7px 7px 3px rgba(122,121,122,0.46);
   height: 75vh;
   width: 40vw;
   @include respond(tab-land) {

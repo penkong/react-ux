@@ -1,8 +1,16 @@
+@import '../abstract/mixins';
 .style-404 {
   width: 100%;
-  height: 30vw;
+  height: 100%;
+  padding: 4rem;
   .eyes {
     width: 10vw;
+    @include respond (tab-port) {
+      width: 20vw;
+    }
+    @include respond (phone) {
+      width: 30vw;
+    }
     margin: 0 auto;
     margin-top: 12rem;
     display: flex;
@@ -18,6 +26,12 @@
   .mouth {
     height: 2.5rem;
     width: 10vw;
+    @include respond (tab-port) {
+      width: 20vw;
+    }
+    @include respond (phone) {
+      width: 30vw;
+    }
     background-color: #EB6F6F;
     margin: 0 auto;
     margin-top: 6rem;
@@ -26,22 +40,24 @@
     color: #EB6F6F;
     min-width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: inherit;
     margin: 4rem auto;
     :first-child {
+      text-shadow: 1px 1px 1px rgb(214, 214, 214);
       font-size: 4rem;
       margin-bottom: 2rem;
     }
     :nth-child(2) {
-      font-size: 4rem;
+      text-shadow: 1px 1px 1px rgb(214, 214, 214);
+      font-size: 3rem;
     }
     a {
-      font-size: 3rem;
       text-decoration: none;
       color: #22DE87;
       transition: all 0.4s ease-in;
-      :hover {
+      &:hover {
+        transform: scale(1.01);
         color: rgb(1, 65, 35);
       }
     }

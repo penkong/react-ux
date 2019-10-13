@@ -15,7 +15,7 @@ class View404 extends Component {
         <div className="text-404">
           <p>404</p>
           <p>others waiting for you!</p>
-          <p>please <a href="/">back ...</a></p>
+          <p>please <a href="/">Back ...</a></p>
         </div>
       </div>
     );

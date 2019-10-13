@@ -10,6 +10,8 @@ import history from './utils/history';
 import Header from "./layouts/Header/Header";
 import Spinner from "./components/Spinner/Spinner";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
+import LoadingBlue from './components/LoadingBlue/LoadingBlue';
+import Success from './components/Success/Success';
 import Page404 from "./pages/Page404/Page404";
 
 
@@ -33,8 +35,10 @@ const App = () => {
             {/* suspense for async loading comp with lazy */}
             <Suspense fallback={Spinner}>
               <Route exact path="/" render={()=>(<LandingPage/>)} />
+              <Route exact path="/loading" component={LoadingBlue} />
               <Route exact path="/user" component={UserInfoPage} />
               <Route exact path="/confirm" component={ConfirmPage} />
+              <Route exact path="/success" component={Success} />
               <Route exact path="/page404" component={Page404} />
             </Suspense>
           </ErrorBoundary>
